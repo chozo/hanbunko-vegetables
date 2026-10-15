@@ -1,0 +1,15 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "hanbunko-vegetables",
+  "compatibility_date": "2026-10-01",
+  // game.chozo.net の他のゲームと同じく、パス配下だけで公開する
+  "workers_dev": false,
+  "observability": { "enabled": true, "head_sampling_rate": 1 },
+  // Vite のビルド結果を静的アセットとして配信（Worker スクリプトなし）。
+  // URL の /hanbunko-vegetables/ に合わせ、dist/hanbunko-vegetables/ に出力している
+  "assets": { "directory": "./dist" },
+  "routes": [
+    { "pattern": "game.chozo.net/hanbunko-vegetables", "zone_name": "chozo.net" },
+    { "pattern": "game.chozo.net/hanbunko-vegetables/*", "zone_name": "chozo.net" }
+  ]
+}

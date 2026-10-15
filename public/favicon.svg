@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="blade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f7ff"/>
+      <stop offset="0.55" stop-color="#b9c3d6"/>
+      <stop offset="1" stop-color="#8b96ab"/>
+    </linearGradient>
+    <linearGradient id="handle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a5a34"/>
+      <stop offset="1" stop-color="#4e2f18"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#1d1640"/>
+  <!-- 包丁（左下が柄、右上が切っ先） -->
+  <g transform="rotate(-38 32 32)">
+    <!-- 刃先の光（魔法の刃） -->
+    <path d="M25 38.5 Q50 38 59.5 31" stroke="#7ff3ff" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.45"/>
+    <!-- 刃 -->
+    <path d="M24 25 L51 25 Q59 26 61 30.5 Q54 37.5 24 38.5 Z" fill="url(#blade)" stroke="#5d6578" stroke-width="0.8" stroke-linejoin="round"/>
+    <path d="M25 37.2 Q50 36.8 59.3 31" stroke="#ffffff" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+    <!-- 口金 -->
+    <rect x="21" y="27" width="4" height="10" rx="1" fill="#c9ced8" stroke="#6b7385" stroke-width="0.6"/>
+    <!-- 柄 -->
+    <rect x="3" y="28.2" width="19" height="7.6" rx="3.2" fill="url(#handle)"/>
+    <circle cx="9" cy="32" r="1.1" fill="#d9dde6"/>
+    <circle cx="16" cy="32" r="1.1" fill="#d9dde6"/>
+  </g>
+</svg>
